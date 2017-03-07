@@ -1,0 +1,37 @@
+{
+  "name": "resolve-files",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "egg-bin": "^2.2.3",
+    "egg-ci": "^1.3.0",
+    "eslint": "^3.16.1",
+    "eslint-config-egg": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && npm run cov"
+  },
+  "ci": {
+    "version": "4, 6, 7",
+    "license": {
+      "year": "2017",
+      "fullname": "popomore"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:popomore/resolve-files.git"
+  },
+  "author": "popomore <sakura9515@gmail.com>",
+  "license": "MIT"
+}
