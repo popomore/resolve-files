@@ -1,7 +1,7 @@
 {
   "name": "resolve-files",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get all files from the given entry that resolved by `require`",
   "dependencies": {},
   "devDependencies": {
     "autod": "^2.7.1",
@@ -33,5 +33,8 @@
     "url": "git@github.com:popomore/resolve-files.git"
   },
   "author": "popomore <sakura9515@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ]
 }

@@ -20,6 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/resolve-files.svg?style=flat-square
 [download-url]: https://npmjs.org/package/resolve-files
 
+Get all files from the given entry that resolved by `require`
 
 ## Usage
 
@@ -43,6 +44,8 @@ const result = resolve({ cwd: process.cwd() });
 //   '$BASEDIR/lib/index.js',
 // ]
 ```
+
+It will resolve the entry
 
 Normally, the result will include npm modules, but you can give an options `ignoreModules: true` to ignore modules (only return relative files).
 
