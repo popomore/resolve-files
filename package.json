@@ -2,12 +2,15 @@
   "name": "resolve-files",
   "version": "1.0.0",
   "description": "Get all files from the given entry that resolved by `require`",
-  "dependencies": {},
+  "dependencies": {
+    "crequire": "^1.8.0",
+    "debug": "^2.6.3"
+  },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg-bin": "^2.2.3",
-    "egg-ci": "^1.3.0",
-    "eslint": "^3.16.1",
+    "autod": "^2.8.0",
+    "egg-bin": "^1.10.3",
+    "egg-ci": "^1.6.0",
+    "eslint": "^3.18.0",
     "eslint-config-egg": "^3.2.0"
   },
   "engines": {
