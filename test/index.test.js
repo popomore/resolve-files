@@ -48,10 +48,14 @@ describe('test/index.test.js', () => {
 
   it('should resolve multi entry', () => {
     const cwd = path.join(__dirname, 'fixtures/multi-entry');
-    const result = resolve({ cwd, entry: [
-      path.join(cwd, 'a.js'),
-      path.join(cwd, 'b.js'),
-    ] });
+    const result = resolve({
+      cwd,
+      entry: [
+        path.join(cwd, 'a.js'),
+        path.join(cwd, 'b.js'),
+        path.join(cwd, 'noexist.js'),
+      ],
+    });
     assert.deepEqual(result, [
       path.join(cwd, 'a.js'),
       path.join(cwd, 'a/index.js'),
