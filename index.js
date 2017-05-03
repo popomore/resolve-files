@@ -26,7 +26,9 @@ module.exports = options => {
 
   const files = new Set();
   for (const entry of entries) {
-    resolveFile(entry, files, options);
+    if (fs.existsSync(entry) && fs.statSync(entry).isFile()) {
+      resolveFile(entry, files, options);
+    }
   }
 
   return Array.from(files);
