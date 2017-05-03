@@ -1,6 +1,6 @@
 {
   "name": "resolve-files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get all files from the given entry that resolved by `require`",
   "dependencies": {
     "crequire": "^1.8.0",
